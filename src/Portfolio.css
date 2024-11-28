@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --header-bg-color-light: #e2e8f0;
+  --header-bg-color-dark: #020617;
+  --header-bg-color: var(--header-bg-color-light);
+}
+
+.dark {
+  --header-bg-color: var(--header-bg-color-dark);
+}
+
+.App {
+  text-align: center;
+}
+
+.mask-gradient {
+  mask-image: linear-gradient(black 65%, transparent);
+}
+
+.large-dotted-line {
+  background-image: radial-gradient(circle, #3b82f6 20%, transparent 20%);
+  background-size: 10px 38px;
+  width: 10px;
+}
+.dark-large-dotted-line {
+  background-image: radial-gradient(circle, #bef264 20%, transparent 20%);
+  background-size: 10px 38px;
+  width: 10px;
+}
+
+@keyframes paintHeader {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: var(--header-bg-color);
+  }
+}
+
+.sticky-header {
+  animation: paintHeader 0.5s ease-in-out forwards;
+  animation-timeline: scroll(root block);
+  animation-range: 0% 10%;
+}
