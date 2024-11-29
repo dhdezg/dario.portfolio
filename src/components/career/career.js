@@ -43,14 +43,15 @@ const CareerItem = ({ event, index, isLast }) => {
       </div>
 
       <div
-        className="md:hidden absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center mt-1"
+        className="md:hidden absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center mt-2"
         style={{ top: "100%" }}
       >
         {!isLast && (
-          <>
-            <div className="w-4 h-4 rounded-full bg-blue-500 dark:bg-lime-300" />
-            <div className="w-0.5 h-16 bg-blue-500 dark:bg-lime-300 my-1" />
-          </>
+          <div>
+            {Array.from({ length: 3 }).map((_) => (
+              <div className="w-4 h-4 rounded-full bg-blue-500 dark:bg-lime-300 my-1" />
+            ))}
+          </div>
         )}
       </div>
     </div>
