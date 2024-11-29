@@ -68,7 +68,7 @@ const resources = {
       theme: "Tema",
       language: "Idioma",
       aboutDesc:
-        "Hola!🙋🏻‍♂️<br /> Soy Dario, un desarrollador con más de 3 años de experiencia en el desarrollo de aplicaciones web. <br /> He trabajado en los sectores de banca y la educación. <br /> Me encanta crear webs que ayuden al usuario además tener una experiencia intuitiva y agradable.",
+        "Hola!🙋🏻‍♂️<br /> Soy Dario, un desarrollador con más de 3 años de experiencia en el desarrollo de aplicaciones web. <br /> He trabajado en los sectores de banca y educación. <br /> Me encanta crear webs que ayuden al usuario además tener una experiencia intuitiva y agradable.",
       education: "Educación",
       educationDesc: "Graduado en Ingeniería Informática",
       experienceTitle: "Experiencia",
