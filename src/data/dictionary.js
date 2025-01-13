@@ -54,6 +54,10 @@ const resources = {
       notificationSuccess: "Message sent successfully!",
       notificationError: "Error sending message!",
       callMe: "Call me",
+      cvgeneratorDesc:
+        "A simple tool to generate a professional CV in minutes without worrying about styles and no registrations.",
+      taskManagementDesc: "Collaborative task management with real-time updates",
+      weatherDashboardDesc: "Real-time weather tracking with detailed analytics",
     },
   },
   es: {
@@ -108,6 +112,10 @@ const resources = {
       notificationSuccess: "¡Mensaje enviado con éxito!",
       notificationError: "¡Error al enviar el mensaje!",
       callMe: "Llámame",
+      cvgeneratorDesc:
+        "Una herramienta para generar un CV profesional en pocos minutos sin necesidad de preocuparte por los estilos y sin registros.",
+      taskManagementDesc: "Gestión de tareas colaborativa con actualizaciones en tiempo real",
+      weatherDashboardDesc: "Seguimiento del tiempo en tiempo real con análisis detallados",
     },
   },
 };

@@ -1,4 +1,4 @@
-import { GitGraph } from "lucide-react";
+import { GitGraph, PlayIcon } from "lucide-react";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { projects } from "../data/projects";
@@ -23,7 +23,7 @@ const Projects = () => {
                 key={index}
                 className="group overflow-hidden border-2 transition-all duration-300"
               >
-                <div className="relative overflow-hidden aspect-video">
+                <div className="relative overflow-hidden aspect-video rounded">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -49,17 +49,37 @@ const Projects = () => {
                         Code
                       </a>
                     </Button>
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      asChild
+                      className="hover:bg-slate-400"
+                    >
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <PlayIcon
+                          size={20}
+                          strokeWidth={1.5}
+                          className="w-4 h-4 mr-2"
+                        />
+                        Live
+                      </a>
+                    </Button>
                   </div>
+                </div>
+                <div className="px-1 py-2">
+                  <h3 className="font-comfortaa font-bold text-lg">
+                    {project.title}
+                  </h3>
+                  <p className="font-urbanist text-md">
+                    {t(project.description)}
+                  </p>
                 </div>
               </Card>
             ))}
-          </div>
-
-          {/* Overlay Layer */}
-          <div className="absolute inset-0 bg-slate-200 bg-opacity-90 flex items-center justify-center rounded-md">
-            <h1 className="font-comfortaa text-4xl font-bold text-gray-800 overflow-hidden whitespace-nowrap border-r-4 border-gray-800 pr-2 animate-typing">
-              {t("comingSoon")}
-            </h1>
           </div>
         </div>
       </div>
