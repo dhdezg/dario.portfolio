@@ -77,6 +77,16 @@ const Projects = () => {
                   <p className="font-urbanist text-md">
                     {t(project.description)}
                   </p>
+                  <div className="p-2 flex flex-wrap gap-2 justify-center">
+                    {project.tags.map((tag, index) => (
+                      <span
+                        key={index}
+                        className="px-2 py-1 bg-slate-300 dark:bg-slate-600 text-sm rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </Card>
             ))}
