@@ -56,8 +56,12 @@ const resources = {
       callMe: "Call me",
       cvgeneratorDesc:
         "A simple tool to generate a professional CV in minutes without worrying about styles and no registrations.",
-      taskManagementDesc: "Collaborative task management with real-time updates",
-      weatherDashboardDesc: "Real-time weather tracking with detailed analytics",
+      taskManagementDesc:
+        "Collaborative task management with real-time updates",
+      weatherDashboardDesc:
+        "Real-time weather tracking with detailed analytics",
+      ayesaDesc:
+        "Develop of a new tool for bank internal use, using AI to generate reports of the risk department.",
     },
   },
   es: {
@@ -114,8 +118,12 @@ const resources = {
       callMe: "Llámame",
       cvgeneratorDesc:
         "Una herramienta para generar un CV profesional en pocos minutos sin necesidad de preocuparte por los estilos y sin registros.",
-      taskManagementDesc: "Gestión de tareas colaborativa con actualizaciones en tiempo real",
-      weatherDashboardDesc: "Seguimiento del tiempo en tiempo real con análisis detallados",
+      taskManagementDesc:
+        "Gestión de tareas colaborativa con actualizaciones en tiempo real",
+      weatherDashboardDesc:
+        "Seguimiento del tiempo en tiempo real con análisis detallados",
+      ayesaDesc:
+        "Desarrollo de una nueva herramienta para uso interno del banco, apoyandose en la IA para la generación de informes del departamento de riesgos.",
     },
   },
 };

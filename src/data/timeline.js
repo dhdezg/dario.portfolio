@@ -1,6 +1,13 @@
 export const timelineData = [
   {
-    year: `2023 - Act`,
+    year: "2025 - Act",
+    title: "Front End Developer",
+    company: "Ayesa - BBVA",
+    description: "ayesaDesc",
+    type: "work",
+  },
+  {
+    year: `2023 - 2024`,
     title: "Front End Developer",
     company: "Neoris - Sanoma",
     description: "neorisDesc",
