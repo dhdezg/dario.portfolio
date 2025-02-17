@@ -1,13 +1,13 @@
-import CVGeneratorPreview from "../assets/CVGeneratorPreview.png";
+import CVGeneratorPreview from '../assets/CVGeneratorPreview.png';
 
 export const projects = [
   {
-    title: "CV Generator",
-    description: "cvgeneratorDesc",
+    title: 'CV Generator',
+    description: 'cvgeneratorDesc',
     image: CVGeneratorPreview,
-    tags: ["React", "Javascript", "HTML", "CSS"],
-    github: "https://github.com/dhdezg/cvgenerator",
-    live: "https://cvgenerator-dariodev.vercel.app/",
+    tags: ['React', 'Javascript', 'HTML', 'CSS'],
+    github: 'https://github.com/dhdezg/cvgenerator',
+    live: 'https://bestresume.vercel.app/',
   },
   // {
   //   title: "Task Management App",
