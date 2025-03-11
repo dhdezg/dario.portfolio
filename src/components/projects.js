@@ -1,9 +1,9 @@
-import { GitGraph, PlayIcon } from "lucide-react";
-import React from "react";
-import { useTranslation } from "react-i18next";
-import { projects } from "../data/projects";
-import { Button } from "./ui/button";
-import { Card } from "./ui/card";
+import { GitGraph, PlayIcon } from 'lucide-react';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { projects } from '../data/projects';
+import { Button } from './ui/button';
+import { Card } from './ui/card';
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -12,7 +12,7 @@ const Projects = () => {
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <h2 className="font-comfortaa text-4xl font-bold mb-16 text-center">
-          {t("personalProjects")}
+          {t('personalProjects')}
         </h2>
 
         <div className="relative">
@@ -21,8 +21,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className="group overflow-hidden border-2 transition-all duration-300"
-              >
+                className="group overflow-hidden border-2 transition-all duration-300">
                 <div className="relative overflow-hidden aspect-video rounded">
                   <img
                     src={project.image}
@@ -34,38 +33,34 @@ const Projects = () => {
                       size="sm"
                       variant="secondary"
                       asChild
-                      className="hover:bg-slate-400"
-                    >
+                      className="hover:bg-slate-400">
                       <a
                         href={project.github}
                         target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                        rel="noopener noreferrer">
                         <GitGraph
                           size={20}
                           strokeWidth={1.5}
                           className="w-4 h-4 mr-2"
                         />
-                        Code
+                        {t('code')}
                       </a>
                     </Button>
                     <Button
                       size="sm"
                       variant="secondary"
                       asChild
-                      className="hover:bg-slate-400"
-                    >
+                      className="hover:bg-slate-400">
                       <a
                         href={project.live}
                         target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                        rel="noopener noreferrer">
                         <PlayIcon
                           size={20}
                           strokeWidth={1.5}
                           className="w-4 h-4 mr-2"
                         />
-                        Live
+                        {t('live')}
                       </a>
                     </Button>
                   </div>
@@ -81,8 +76,7 @@ const Projects = () => {
                     {project.tags.map((tag, index) => (
                       <span
                         key={index}
-                        className="px-2 py-1 bg-slate-300 dark:bg-slate-600 text-sm rounded-full"
-                      >
+                        className="px-2 py-1 bg-blue-500 dark:bg-lime-300 dark:text-slate-900 text-slate-100 text-sm rounded-full">
                         {tag}
                       </span>
                     ))}

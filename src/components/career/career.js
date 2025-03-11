@@ -1,7 +1,7 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import { timelineData } from "../../data/timeline";
-import { CareerIcon } from "./careerIcon";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { timelineData } from '../../data/timeline';
+import { CareerIcon } from './careerIcon';
 
 const CareerItem = ({ event, index, isLast }) => {
   const { t } = useTranslation();
@@ -9,14 +9,12 @@ const CareerItem = ({ event, index, isLast }) => {
     <div className="relative">
       <div
         className={`mb-20 md:mb-12 flex items-center justify-center font-urbanist ${
-          index % 2 === 0 ? "md:flex-row-reverse" : ""
-        }`}
-      >
+          index % 2 === 0 ? 'md:flex-row-reverse' : ''
+        }`}>
         <div
           className={`w-full md:w-1/2 ${
-            index % 2 === 0 ? "md:pl-8" : "md:pr-8"
-          }`}
-        >
+            index % 2 === 0 ? 'md:pl-8' : 'md:pr-8'
+          }`}>
           <div className="bg-white dark:bg-slate-800 dark:text-slate-300 p-6 rounded-lg shadow dark:shadow-slate-500 hover:shadow-lg hover:shadow-blue-200 dark:hover:shadow-lime-200 transition-shadow duration-300">
             <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 dark:bg-lime-100 dark:text-lime-700 rounded-full text-sm font-semibold mb-2">
               {t(event.year)}
@@ -30,6 +28,16 @@ const CareerItem = ({ event, index, isLast }) => {
             <p className="text-gray-600 dark:text-gray-200">
               {t(event.description)}
             </p>
+            <div className="flex flex-wrap gap-2 justify-center mt-4">
+              {event.tags &&
+                event.tags.map((tag, tagIndex) => (
+                  <span
+                    key={index}
+                    className="px-2 py-1 bg-blue-500 dark:bg-lime-300 dark:text-slate-900 text-slate-100 text-sm rounded-full">
+                    {tag}
+                  </span>
+                ))}
+            </div>
           </div>
         </div>
 
@@ -44,8 +52,7 @@ const CareerItem = ({ event, index, isLast }) => {
 
       <div
         className="md:hidden absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center mt-2"
-        style={{ top: "100%" }}
-      >
+        style={{ top: '100%' }}>
         {!isLast && (
           <div>
             {Array.from({ length: 3 }).map((_) => (
@@ -61,14 +68,14 @@ const CareerItem = ({ event, index, isLast }) => {
 const Career = () => {
   const { t } = useTranslation();
   const [isDarkTheme, setIsDarkTheme] = React.useState(
-    document.documentElement.classList.contains("dark")
+    document.documentElement.classList.contains('dark')
   );
 
   React.useEffect(() => {
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
-        if (mutation.attributeName === "class") {
-          setIsDarkTheme(document.documentElement.classList.contains("dark"));
+        if (mutation.attributeName === 'class') {
+          setIsDarkTheme(document.documentElement.classList.contains('dark'));
         }
       });
     });
@@ -83,12 +90,12 @@ const Career = () => {
   return (
     <div id="experience" className="max-w-4xl mx-auto py-20 px-4">
       <h2 className="font-comfortaa text-4xl font-bold text-center mb-16">
-        {t("professionalJourney")}
+        {t('professionalJourney')}
       </h2>
       <div className="relative">
         <div
           className={`hidden md:block absolute left-1/2 transform -translate-x-1/2 w-3 h-full ${
-            isDarkTheme ? "dark-large-dotted-line" : "large-dotted-line"
+            isDarkTheme ? 'dark-large-dotted-line' : 'large-dotted-line'
           }`}
         />
         {timelineData.map((event, index) => (

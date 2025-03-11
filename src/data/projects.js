@@ -5,7 +5,7 @@ export const projects = [
     title: 'CV Generator',
     description: 'cvgeneratorDesc',
     image: CVGeneratorPreview,
-    tags: ['React', 'Javascript', 'HTML', 'CSS'],
+    tags: ['React', 'Javascript', 'HTML', 'TailwindCSS'],
     github: 'https://github.com/dhdezg/cvgenerator',
     live: 'https://bestresume.vercel.app/',
   },
