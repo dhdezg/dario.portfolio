@@ -25,13 +25,13 @@ const resources = {
       frontEnd: 'Front End Developer',
       nowadays: 'Nowadays',
       neorisDesc:
-        'Creation of a new product for the education sector. Transforming Figma designs into code, with Lit Element and Typescript technologies. Ensuring the correct functioning of the code with unit testing with OpenWC. And achieving the objectives set by the client.',
+        'I participated in the development of an ambitious new product for the education sector, designed to transform teaching through an innovative approach. From its initial phase, I worked on the implementation of the interface, ensuring a faithful translation of the designs into code and guaranteeing a seamless experience for users. In addition, the project required deployment on a CDN, which meant adapting the architecture to optimize performance and resource allocation.',
       bbvaDesc:
-        'Development of new functionalities in the public website of the Spanish bank BBVA, using Lit Element, Typescript and React technologies.',
+        'I contributed to the development and evolution of BBVA´s public website, implementing new features to improve the user experience. My work focused on optimizing performance, accessibility and maintainability of the code in a high traffic environment.',
       upmDesc:
         'Graduate in computer engineering from the UPM technical school.',
       inversisDesc:
-        'Started my journey in web development with focus on front-end technologies. Development of new functionalities and bug fixes using Angular 12 and Javascript.',
+        'I took my first steps in web development with a focus on the frontend, participating in the implementation of new features and troubleshooting in a financial platform. This experience allowed me to acquire a solid base in the creation and maintenance of scalable applications.',
       upm: 'Universidad Politécnica Madrid',
       personalProjects: 'Personal projects',
       comingSoon: 'Coming soon...',
@@ -61,7 +61,7 @@ const resources = {
       weatherDashboardDesc:
         'Real-time weather tracking with detailed analytics',
       ayesaDesc:
-        'Develop of a new tool for bank internal use, using AI to generate reports of the risk department.',
+        'I am part of the team that is developing from scratch a new internal reporting tool for the risk department of a bank. I work closely with the backend team for the integration of services and with the design team to define the interface and flow of the application. In addition, we consume artificial intelligence services to optimize data analysis and improve process efficiency.',
       code: 'Code',
       live: 'Live',
     },
@@ -89,13 +89,13 @@ const resources = {
       frontEnd: 'Front End Developer',
       nowadays: 'Actualmente',
       neorisDesc:
-        'Creación de un nuevo producto para el sector educativo. Transformación de diseños Figma en código, con tecnologías Lit Element y Typescript. Asegurando el correcto funcionamiento del código con pruebas unitarias con OpenWC. Y consiguiendo los objetivos marcados por el cliente.',
+        'Participé en el desarrollo de un nuevo y ambicioso producto para el sector educativo, diseñado para transformar la enseñanza mediante un enfoque innovador. Desde su fase inicial, trabajé en la implementación de la interfaz, asegurando una traducción fiel de los diseños en código y garantizando una experiencia fluida para los usuarios. Además, el proyecto requería su despliegue en un CDN, lo que implicó adaptar la arquitectura para optimizar el rendimiento y la distribución de los recursos.',
       bbvaDesc:
-        'Desarrollo de nuevas funcionalidades en la web pública del banco español BBVA, utilizando las tecnologías Lit Element, Typescript y React.',
+        'Contribuí al desarrollo y evolución de la web pública de BBVA, implementando nuevas funcionalidades para mejorar la experiencia del usuario. Mi labor se enfocó en optimizar el rendimiento, la accesibilidad y la mantenibilidad del código en un entorno de alto tráfico.',
       upmDesc:
         'Graduado en ingeniería informática por la escuela técnica de la UPM.',
       inversisDesc:
-        'Comencé mi andadura en el desarrollo web con foco en tecnologías front-end. Desarrollo de nuevas funcionalidades y corrección de errores utilizando Angular 12 y Javascript.',
+        'Di mis primeros pasos en el desarrollo web con un enfoque en el frontend, participando en la implementación de nuevas funcionalidades y la resolución de incidencias en una plataforma financiera. Esta experiencia me permitió adquirir una base sólida en la creación y mantenimiento de aplicaciones escalables',
       upm: 'Universidad Politécnica Madrid',
       personalProjects: 'Proyectos personales',
       comingSoon: 'Próximamente...',
@@ -125,7 +125,7 @@ const resources = {
       weatherDashboardDesc:
         'Seguimiento del tiempo en tiempo real con análisis detallados',
       ayesaDesc:
-        'Desarrollo de una nueva herramienta para uso interno del banco, apoyandose en la IA para la generación de informes del departamento de riesgos.',
+        'Formo parte del equipo que está desarrollando desde cero una nueva herramienta interna para la generación de informes en el departamento de riesgos de un banco. Trabajo en estrecha colaboración con el equipo de backend para la integración de servicios y con el equipo de diseño para definir la interfaz y el flujo de la aplicación. Además, consumimos servicios de inteligencia artificial para optimizar el análisis de datos y mejorar la eficiencia del proceso.',
       code: 'Código',
       live: 'Visitar',
     },
